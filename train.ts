@@ -1,11 +1,25 @@
 const { NlpManager } = require("node-nlp");
 const sample: ISample = require("./datasets/samples.json");
 const datatrain: IDataTrain = require("./datasets/datatrain.json");
+const insurance: IDataTrain = require("./datasets/insurance.json")
 
 const manager = new NlpManager({ languages: ["en"], forceNER: true });
 
 //train from datatrain
 datatrain.data.forEach(({ utterances, answers, intent }) => {
+  //train the intents / topic
+  utterances.forEach((utterance) => {
+    manager.addDocument("en", utterance, intent);
+  });
+
+  //train the answer/nlg of a topic
+  answers.forEach((answer) => {
+    manager.addAnswer("en", intent, answer);
+  });
+});
+
+//train from insurance
+insurance.data.forEach(({ utterances, answers, intent }) => {
   //train the intents / topic
   utterances.forEach((utterance) => {
     manager.addDocument("en", utterance, intent);
