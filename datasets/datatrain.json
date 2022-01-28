@@ -1,5 +1,5 @@
 {
-    "name": "Sample Insurance Data",
+    "name": "Corpus",
     "locale": "en-US",
     "data": [
         {
@@ -177,7 +177,7 @@
                 "what is your boss name?"
             ],
             "answers": [
-                "My Boss name is Ibrahim. \n maybe you can find my source code on his github.\ncheckout: https://github.com/ibrahimotieno/nlp-insubot-backend"
+                "My Boss name is Ilyas. \n maybe you can find my source code on his github.\ncheckout: https://github.com/hikaaam"
             ]
         },
         {
@@ -189,7 +189,7 @@
                 "give me your github source code"
             ],
             "answers": [
-                "sure, \nhttps://github.com/ibrahimotieno/nlp-insubot-backend"
+                "sure, \nhttps://github.com/hikaaam/nlp_chatbot"
             ]
         },
         {
