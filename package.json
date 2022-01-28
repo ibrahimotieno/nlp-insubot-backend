@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon",
     "telegram": "ts-node  telegram.ts",
+    "discord": "ts-node  discord.ts",
     "model-train": "ts-node train.ts",
     "model-test": "ts-node modeltester.ts"
   },
